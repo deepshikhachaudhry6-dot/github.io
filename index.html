@@ -782,29 +782,7 @@
 
   <!-- CHANGE 3: Inquiry form now sends message to your WhatsApp -->
   <script>
-    document.querySelector('#inquiryForm')?.addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      var name = document.getElementById('parentName')?.value || '';
-      var phone = document.getElementById('phoneNumber')?.value || '';
-      var age = document.getElementById('childAge')?.value || '';
-      var message = document.getElementById('message')?.value || '';
-      
-      var whatsappMessage = "Hello! I have an admission enquiry for Little Gurukul Preschool.%0A%0A";
-      whatsappMessage += "*Parent Name:* " + encodeURIComponent(name) + "%0A";
-      whatsappMessage += "*Phone:* " + encodeURIComponent(phone) + "%0A";
-      whatsappMessage += "*Child's Age:* " + encodeURIComponent(age) + "%0A";
-      whatsappMessage += "*Message:* " + encodeURIComponent(message) + "%0A%0A";
-      whatsappMessage += "Please get in touch with me. Thank you!";
-      
-      var whatsappUrl = "https://wa.me/919582308938?text=" + whatsappMessage;
-      
-      window.open(whatsappUrl, '_blank');
-      
-      alert('Thank you! You will be redirected to WhatsApp to send your enquiry.');
-      this.reset();
-    });
-  </script>
+      </script>
 
 <script>
 // Your Pipedream webhook URL
