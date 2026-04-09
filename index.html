@@ -805,5 +805,67 @@
       this.reset();
     });
   </script>
+
+<script>
+// Your Pipedream webhook URL
+const PIPEDREAM_WEBHOOK = "https://eomcniowkz9ru.m.pipedream.net";
+
+// Wait for the page to load
+document.addEventListener('DOMContentLoaded', function() {
+    // Find the inquiry form
+    const form = document.querySelector('#inquiryForm');
+    
+    if (form) {
+        form.addEventListener('submit', async function(event) {
+            event.preventDefault();
+            
+            // Get form values
+            const parentName = document.querySelector('#parentName')?.value || '';
+            const phoneNumber = document.querySelector('#phoneNumber')?.value || '';
+            const childAge = document.querySelector('#childAge')?.value || '';
+            const message = document.querySelector('#message')?.value || '';
+            
+            // Prepare data to send
+            const formData = {
+                parentName: parentName,
+                phoneNumber: phoneNumber,
+                childAge: childAge,
+                message: message,
+                timestamp: new Date().toISOString(),
+                source: "Little Gurukul Website"
+            };
+            
+            // Show loading state on button
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            try {
+                // Send to Pipedream
+                const response = await fetch(PIPEDREAM_WEBHOOK, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+                
+                if (response.ok) {
+                    alert('Thank you! Our AI admissions counselor will call you shortly to answer your questions and help schedule a tour.');
+                    form.reset();
+                } else {
+                    alert('Something went wrong. Please call us directly at +91 9582308938');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Network error. Please call us directly at +91 9582308938');
+            } finally {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }
+        });
+    }
+});
+</script>
+  
 </body>
 </html>
