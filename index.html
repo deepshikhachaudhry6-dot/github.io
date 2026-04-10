@@ -785,8 +785,44 @@
       </script>
 
 <script>
-// Your Pipedream webhook URL
+// Pipedream Webhook for AI Voice Call
 const WEBHOOK_URL = "https://eoanzku2tdgr4v5.m.pipedream.net";
+
+document.getElementById('inquiryForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const parentName = document.getElementById('parentName').value;
+    const phoneNumber = document.getElementById('phoneNumber').value;
+    const childAge = document.getElementById('childAge').value;
+    const message = document.getElementById('message').value;
+    
+    const submitBtn = this.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
+    
+    try {
+        const response = await fetch(WEBHOOK_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ parentName, phoneNumber, childAge, message })
+        });
+        
+        if (response.ok) {
+            alert('✅ Success! Our AI agent will call you shortly.');
+            this.reset();
+        } else {
+            alert('❌ Error. Please call us directly at +91 9582308938');
+        }
+    } catch (error) {
+        alert('❌ Network error. Please call +91 9582308938');
+    } finally {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+    }
+});
+</script>
+
   
 // Wait for the page to load
 document.addEventListener('DOMContentLoaded', function() {
