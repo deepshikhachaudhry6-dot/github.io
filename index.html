@@ -821,7 +821,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             try {
                 // Send to Pipedream
-                const response = await fetch(PIPEDREAM_WEBHOOK, {
+                const response = await fetch(WEBHOOK_URL, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(formData)
