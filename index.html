@@ -2,880 +2,1380 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Little Gurukul Preschool | Montessori & Gurukul Values</title>
-  <!-- Google Fonts: Modern Serif for headings + Friendly Rounded for body -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Quicksand:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-  <!-- Font Awesome 6 (Free Icons) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little Gurukul Preschool | Premium Montessori · Kundli, Haryana</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --green-deep:   #162A13;
+      --green-mid:    #243F1F;
+      --green-rich:   #2F5228;
+      --green-light:  #4A7040;
+      --gold:         #B8892A;
+      --gold-bright:  #D4A843;
+      --gold-light:   #EDD89A;
+      --terra:        #7B3D1E;
+      --cream:        #FAF8F3;
+      --cream-alt:    #F1EBE0;
+      --charcoal:     #1A1A18;
+      --warm-gray:    #5C5750;
+      --border:       rgba(0,0,0,0.09);
+      --shadow-sm:    0 2px 12px rgba(0,0,0,0.06);
+      --shadow-md:    0 8px 32px rgba(0,0,0,0.10);
+      --shadow-lg:    0 20px 56px rgba(0,0,0,0.14);
     }
+
+    html { scroll-behavior: smooth; }
 
     body {
-      background: #fffcf8;
-      font-family: 'Quicksand', sans-serif;
-      color: #2d3e2b;
-      line-height: 1.4;
-      scroll-behavior: smooth;
+      font-family: 'Inter', sans-serif;
+      background: var(--cream);
+      color: var(--charcoal);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
     }
 
-    /* Typography */
-    h1, h2, h3, .heading-serif {
+    h1,h2,h3,h4 {
       font-family: 'Cormorant Garamond', serif;
       font-weight: 600;
+      line-height: 1.2;
       letter-spacing: -0.01em;
-      color: #3b2a1f;
     }
 
-    h2 {
-      font-size: 2.2rem;
-      margin-bottom: 1rem;
-      position: relative;
-      display: inline-block;
-    }
-    .section-title {
-      text-align: center;
-      margin-bottom: 2.5rem;
-    }
-    .section-title h2 {
-      background: linear-gradient(135deg, #c68b5e, #b06d3a);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      display: inline-block;
-    }
-    .section-title p {
-      font-size: 1.1rem;
-      color: #6b5a4e;
-      max-width: 600px;
-      margin: 0.5rem auto 0;
-    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
 
-    body, button, input, textarea {
-      font-family: 'Quicksand', sans-serif;
-    }
-
-    .container {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 0 32px;
-    }
-
-    /* Soft pastel palette + nature */
-    :root {
-      --saffron-light: #fde9df;
-      --soft-green: #e2f0e0;
-      --sky-blue: #e1f0fa;
-      --warm-beige: #faf3e8;
-      --peach: #ffe1cc;
-      --accent-terracotta: #d9895b;
-      --accent-wood: #b97f51;
-      --shadow-sm: 0 12px 28px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.02);
-      --shadow-md: 0 18px 32px rgba(0, 0, 0, 0.06);
-      --border-radius-card: 28px;
-    }
-
-    /* Buttons */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 12px 28px;
-      border-radius: 40px;
-      font-weight: 600;
-      transition: all 0.25s ease;
-      cursor: pointer;
-      border: none;
-      font-size: 1rem;
-      background: white;
-      box-shadow: var(--shadow-sm);
-      text-decoration: none;
-    }
-    .btn-primary {
-      background: #d9895b;
-      color: white;
-      border: none;
-    }
-    .btn-primary:hover {
-      background: #c06f41;
-      transform: translateY(-2px);
-      box-shadow: 0 10px 20px rgba(217, 137, 91, 0.25);
-    }
-    .btn-outline {
-      background: transparent;
-      border: 1.5px solid #d9895b;
-      color: #b06d3a;
-    }
-    .btn-outline:hover {
-      background: #fef0e8;
-      border-color: #b97f51;
-      transform: translateY(-2px);
-    }
-    /* Pop / Contrast style for Enroll Now */
-    .btn-enroll {
-      background: #e07c3c;
-      color: white;
-      box-shadow: 0 8px 18px rgba(224, 124, 60, 0.35);
-      border: none;
-      position: relative;
-      overflow: hidden;
-    }
-    .btn-enroll:hover {
-      background: #c56126;
-      transform: scale(1.02) translateY(-2px);
-      box-shadow: 0 12px 24px rgba(224, 124, 60, 0.45);
-    }
-    .btn-visit {
-      background: #5f8b5c;
-      color: white;
-      box-shadow: 0 8px 18px rgba(95, 139, 92, 0.3);
-    }
-    .btn-visit:hover {
-      background: #4a6f47;
-      transform: scale(1.02) translateY(-2px);
-    }
-
-    /* Floating Chatbot Icon - ONLY ONE (KEPT) */
-    .chatbot-float {
-      position: fixed;
-      bottom: 28px;
-      right: 28px;
-      background: #d9895b;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-      cursor: pointer;
-      z-index: 1000;
-      transition: all 0.3s ease;
-      border: none;
-      color: white;
-      font-size: 28px;
-    }
-    .chatbot-float:hover {
-      background: #c06f41;
-      transform: scale(1.08);
-      box-shadow: 0 12px 24px rgba(0,0,0,0.25);
-    }
-
-    /* Navbar */
+    /* ─── NAVBAR ─────────────────────────────────────── */
     .navbar {
-      padding: 20px 0;
-      background: rgba(255, 252, 248, 0.96);
-      backdrop-filter: blur(2px);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      border-bottom: 1px solid rgba(0,0,0,0.03);
+      position: fixed; top: 0; width: 100%; z-index: 200;
+      background: rgba(250,248,243,0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      transition: box-shadow 0.3s;
     }
-    .nav-flex {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
+    .navbar.scrolled { box-shadow: var(--shadow-sm); }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 78px; gap: 24px;
     }
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
+    .logo-wrap { display: flex; align-items: center; gap: 14px; text-decoration: none; }
+    .logo-svg-wrap { width: 54px; height: 54px; flex-shrink: 0; }
+    .logo-text-block { display: flex; flex-direction: column; }
+    .logo-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem; font-weight: 700;
+      color: var(--green-deep); letter-spacing: 0.02em;
+      line-height: 1.1;
     }
-    .logo-icon {
-      font-size: 2rem;
-      background: #fae3cd;
-      width: 48px;
-      height: 48px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      color: #b1622e;
-    }
-    .logo h1 {
-      font-size: 1.6rem;
-      font-weight: 700;
-      letter-spacing: -0.5px;
+    .logo-tagline {
+      font-size: 0.68rem; font-weight: 500;
+      color: var(--gold); letter-spacing: 0.12em;
+      text-transform: uppercase;
     }
     .nav-links {
-      display: flex;
-      gap: 28px;
-      list-style: none;
+      display: flex; align-items: center; gap: 32px; list-style: none;
     }
     .nav-links a {
-      text-decoration: none;
-      font-weight: 600;
-      color: #4a3a2c;
-      transition: 0.2s;
+      font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em;
+      text-transform: uppercase; color: var(--green-deep);
+      text-decoration: none; transition: color 0.2s;
     }
-    .nav-links a:hover {
-      color: #d9895b;
+    .nav-links a:hover { color: var(--gold); }
+    .btn-nav {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--green-rich); color: #fff;
+      padding: 10px 22px; border-radius: 4px;
+      font-size: 0.82rem; font-weight: 600; letter-spacing: 0.06em;
+      text-transform: uppercase; text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-nav:hover { background: var(--green-deep); transform: translateY(-1px); }
+
+    /* hamburger */
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--green-deep); border-radius: 2px; transition: 0.3s; }
+    .mobile-nav { display: none; }
+
+    /* ─── HERO ───────────────────────────────────────── */
+    .hero {
+      position: relative; min-height: 100vh;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden; padding-top: 78px;
     }
 
-    /* Hero Section */
-    .hero {
-      padding: 60px 0 80px;
+    /* Slider */
+    .hero-slider { position: absolute; inset: 0; }
+    .hero-slide {
+      position: absolute; inset: 0;
+      background-size: cover; background-position: center;
+      opacity: 0; transition: opacity 1.2s ease;
+      transform: scale(1.06);
+      animation: none;
     }
-    .hero-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 48px;
-      align-items: center;
+    .hero-slide.active {
+      opacity: 1;
+      animation: sliderZoom 7s ease forwards;
+    }
+    @keyframes sliderZoom {
+      from { transform: scale(1.06); }
+      to   { transform: scale(1.00); }
+    }
+
+    /* Slide dots */
+    .hero-dots {
+      position: absolute; bottom: 88px; left: 50%; transform: translateX(-50%);
+      display: flex; gap: 8px; z-index: 3;
+    }
+    .hero-dot {
+      width: 28px; height: 3px; border-radius: 2px;
+      background: rgba(255,255,255,0.30); cursor: pointer;
+      transition: background 0.3s, width 0.3s;
+    }
+    .hero-dot.active { background: var(--gold-bright); width: 42px; }
+
+    /* Caption label per slide */
+    .hero-caption {
+      position: absolute; bottom: 112px; right: 48px;
+      z-index: 3; display: flex; align-items: center; gap: 10px;
+      background: rgba(22,42,19,0.70); backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.12);
+      padding: 8px 16px; border-radius: 4px;
+      color: rgba(255,255,255,0.80); font-size: 0.75rem;
+      letter-spacing: 0.10em; text-transform: uppercase;
+      transition: opacity 0.5s;
+    }
+    .hero-caption i { color: var(--gold-bright); }
+
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(160deg,
+        rgba(14,28,12,0.80) 0%,
+        rgba(22,42,19,0.65) 50%,
+        rgba(100,60,20,0.45) 100%);
     }
     .hero-content {
-      flex: 1.1;
+      position: relative; z-index: 2;
+      text-align: center; max-width: 820px;
+      padding: 60px 20px;
     }
     .hero-badge {
-      background: var(--soft-green);
-      display: inline-block;
-      padding: 5px 14px;
-      border-radius: 50px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: #4c6b3c;
-      margin-bottom: 20px;
+      display: inline-flex; align-items: center; gap: 8px;
+      border: 1px solid rgba(212,168,67,0.6);
+      color: var(--gold-bright); font-size: 0.78rem; font-weight: 500;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      padding: 6px 18px; border-radius: 2px;
+      margin-bottom: 28px;
     }
     .hero-content h1 {
-      font-size: 3.2rem;
-      line-height: 1.2;
-      margin-bottom: 18px;
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      color: #fff; font-weight: 600; margin-bottom: 24px;
+      text-shadow: 0 2px 20px rgba(0,0,0,0.3);
     }
+    .hero-content h1 em { color: var(--gold-bright); font-style: italic; }
     .hero-sub {
-      font-size: 1.15rem;
-      color: #5e4b38;
-      margin-bottom: 28px;
-      border-left: 3px solid #d9b48b;
-      padding-left: 20px;
+      font-size: 1.05rem; color: rgba(255,255,255,0.80);
+      max-width: 560px; margin: 0 auto 40px;
+      font-weight: 300; letter-spacing: 0.02em;
     }
-    .btn-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-      margin-top: 12px;
+    .hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .btn-hero-primary {
+      display: inline-flex; align-items: center; gap: 9px;
+      background: var(--gold); color: var(--green-deep);
+      padding: 14px 32px; border-radius: 4px;
+      font-size: 0.88rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; text-decoration: none;
+      transition: all 0.25s; border: 2px solid var(--gold);
     }
-    .hero-image {
-      flex: 1;
-      background: #f5ede4;
-      border-radius: 48px;
-      overflow: hidden;
+    .btn-hero-primary:hover { background: var(--gold-bright); transform: translateY(-2px); box-shadow: 0 12px 28px rgba(184,137,42,0.4); }
+    .btn-hero-outline {
+      display: inline-flex; align-items: center; gap: 9px;
+      background: transparent; color: #fff;
+      padding: 14px 32px; border-radius: 4px;
+      font-size: 0.88rem; font-weight: 600; letter-spacing: 0.08em;
+      text-transform: uppercase; text-decoration: none;
+      border: 2px solid rgba(255,255,255,0.55);
+      transition: all 0.25s;
+    }
+    .btn-hero-outline:hover { border-color: #fff; background: rgba(255,255,255,0.1); }
+    .hero-scroll {
+      position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%);
+      z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 8px;
+      color: rgba(255,255,255,0.5); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase;
+    }
+    .hero-scroll-line {
+      width: 1px; height: 48px;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.5), transparent);
+      animation: scrollLine 1.8s ease-in-out infinite;
+    }
+    @keyframes scrollLine { 0%,100%{ opacity:0.3; transform: scaleY(0.5) translateY(-10px); } 50%{ opacity:1; transform: scaleY(1) translateY(0); } }
+
+    /* ─── STATS STRIP ────────────────────────────────── */
+    .stats-strip {
+      background: var(--green-deep);
+      padding: 0;
+    }
+    .stats-inner {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      divide-x: 1px solid rgba(255,255,255,0.1);
+    }
+    .stat-item {
+      padding: 36px 24px; text-align: center;
+      border-right: 1px solid rgba(255,255,255,0.08);
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.6rem; font-weight: 700;
+      color: var(--gold-bright); line-height: 1;
+      margin-bottom: 6px;
+    }
+    .stat-label {
+      font-size: 0.75rem; font-weight: 500;
+      color: rgba(255,255,255,0.55); letter-spacing: 0.10em;
+      text-transform: uppercase;
+    }
+
+    /* ─── SECTION BASE ───────────────────────────────── */
+    section { padding: 96px 0; }
+    .section-eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--gold);
+      margin-bottom: 14px; display: flex; align-items: center; gap: 10px;
+    }
+    .section-eyebrow::after {
+      content: ''; display: block; height: 1px; width: 40px;
+      background: var(--gold); opacity: 0.5;
+    }
+    .section-title { font-size: clamp(2rem, 4vw, 3rem); color: var(--green-deep); margin-bottom: 20px; }
+    .section-sub { font-size: 1rem; color: var(--warm-gray); max-width: 520px; line-height: 1.7; }
+
+    /* ─── ABOUT ──────────────────────────────────────── */
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+    }
+    .about-img-wrap { position: relative; }
+    .about-img-main {
+      width: 100%; aspect-ratio: 4/5; object-fit: cover;
+      border-radius: 6px; display: block;
+    }
+    .about-img-accent {
+      position: absolute; bottom: -28px; right: -28px;
+      width: 48%; aspect-ratio: 1/1; object-fit: cover;
+      border-radius: 6px; border: 6px solid var(--cream);
       box-shadow: var(--shadow-md);
     }
-    .hero-image img {
-      width: 100%;
-      height: auto;
-      display: block;
-      object-fit: cover;
-      transition: transform 0.4s ease;
+    .about-badge {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--green-deep); color: var(--gold-bright);
+      padding: 10px 20px; border-radius: 4px;
+      font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em;
+      text-transform: uppercase; margin-top: 32px;
     }
-    .hero-image:hover img {
-      transform: scale(1.02);
+    .values-row { display: flex; gap: 32px; margin-top: 36px; }
+    .value-item { display: flex; flex-direction: column; gap: 6px; }
+    .value-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem; font-weight: 700; color: var(--gold); line-height: 1;
     }
+    .value-label { font-size: 0.8rem; color: var(--warm-gray); font-weight: 500; }
 
-    /* cards & sections */
-    section {
-      padding: 70px 0;
+    /* ─── PROGRAMS ───────────────────────────────────── */
+    .programs-bg { background: var(--cream-alt); }
+    .programs-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;
+      margin-top: 56px;
     }
-    .bg-soft {
-      background: var(--warm-beige);
+    .program-card {
+      background: #fff; border-radius: 6px; overflow: hidden;
+      border: 1px solid var(--border); box-shadow: var(--shadow-sm);
+      transition: transform 0.3s, box-shadow 0.3s;
     }
-    .grid-3, .grid-4, .testimonial-grid, .facility-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 32px;
+    .program-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
+    .program-img {
+      width: 100%; height: 220px; object-fit: cover; display: block;
     }
-    .card {
-      background: white;
-      border-radius: var(--border-radius-card);
-      padding: 28px 22px;
-      box-shadow: var(--shadow-sm);
-      transition: all 0.3s;
-      border: 1px solid rgba(0,0,0,0.02);
-    }
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 24px 36px rgba(0, 0, 0, 0.08);
-    }
-    .icon-lg {
-      font-size: 2.4rem;
-      color: #d9895b;
-      margin-bottom: 18px;
-    }
-    .why-icon {
-      background: #fef0e8;
-      width: 52px;
-      height: 52px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 30px;
-      font-size: 1.6rem;
-      margin-bottom: 18px;
-      color: #b76a3a;
-    }
+    .program-body { padding: 28px 26px 32px; }
     .program-age {
-      font-weight: 700;
-      color: #b97f51;
-      margin-bottom: 10px;
-      letter-spacing: 0.3px;
+      display: inline-block;
+      background: var(--cream-alt); color: var(--terra);
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.10em;
+      text-transform: uppercase; padding: 4px 12px; border-radius: 2px;
+      margin-bottom: 14px;
     }
+    .program-card h3 { font-size: 1.5rem; color: var(--green-deep); margin-bottom: 10px; }
+    .program-card p { font-size: 0.9rem; color: var(--warm-gray); line-height: 1.7; }
+    .program-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      margin-top: 18px; font-size: 0.82rem; font-weight: 600;
+      color: var(--green-rich); text-decoration: none; letter-spacing: 0.04em;
+      border-bottom: 1px solid var(--green-light); padding-bottom: 2px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .program-link:hover { color: var(--gold); border-color: var(--gold); }
 
-    /* gallery grid */
+    /* ─── WHY MONTESSORI ─────────────────────────────── */
+    .why-section {
+      background: var(--green-deep);
+      position: relative; overflow: hidden;
+    }
+    .why-section::before {
+      content: '';
+      position: absolute; top: -40%; right: -10%;
+      width: 600px; height: 600px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(184,137,42,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .why-top { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 64px; gap: 40px; }
+    .why-top .section-eyebrow { color: var(--gold-light); }
+    .why-top .section-eyebrow::after { background: var(--gold-light); }
+    .why-top .section-title { color: #fff; max-width: 500px; }
+    .why-top .section-sub { color: rgba(255,255,255,0.55); }
+    .why-link {
+      display: inline-flex; align-items: center; gap: 8px;
+      color: var(--gold-bright); font-size: 0.82rem; font-weight: 600;
+      letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none;
+      white-space: nowrap; transition: gap 0.2s;
+    }
+    .why-link:hover { gap: 14px; }
+    .why-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px;
+    }
+    .why-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.07);
+      padding: 36px 28px; transition: background 0.3s;
+    }
+    .why-card:hover { background: rgba(255,255,255,0.07); }
+    .why-icon {
+      width: 48px; height: 48px;
+      border: 1px solid rgba(184,137,42,0.4);
+      border-radius: 4px; display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem; color: var(--gold-bright);
+      margin-bottom: 22px;
+    }
+    .why-card h3 { font-size: 1.2rem; color: #fff; margin-bottom: 10px; }
+    .why-card p { font-size: 0.87rem; color: rgba(255,255,255,0.50); line-height: 1.7; }
+
+    /* ─── GALLERY ────────────────────────────────────── */
+    .gallery-section { background: var(--cream); }
+    .gallery-header { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 48px; gap: 24px; }
     .gallery-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-    }
-    .gallery-item {
-      border-radius: 24px;
-      overflow: hidden;
-      aspect-ratio: 1/1;
-      background: #efddd0;
-      box-shadow: var(--shadow-sm);
-      transition: all 0.3s;
-    }
-    .gallery-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: 0.4s;
-    }
-    .gallery-item:hover img {
-      transform: scale(1.05);
-    }
-
-    /* Testimonials */
-    .testimonial-card {
-      background: white;
-      border-radius: 32px;
-      padding: 28px;
-      box-shadow: var(--shadow-sm);
-    }
-    .testimonial-text {
-      font-style: italic;
-      margin: 20px 0;
-      color: #3d2e22;
-    }
-    .parent-info {
-      display: flex;
-      align-items: center;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: auto;
       gap: 12px;
     }
-    .parent-img {
-      width: 48px;
-      height: 48px;
-      background: #d9c2ae;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      color: #4e3622;
+    .g1 { grid-column: span 5; grid-row: span 2; }
+    .g2 { grid-column: span 4; }
+    .g3 { grid-column: span 3; }
+    .g4 { grid-column: span 4; }
+    .g5 { grid-column: span 3; }
+    .g6 { grid-column: span 5; }
+    .gallery-item {
+      overflow: hidden; border-radius: 4px;
+      background: var(--cream-alt);
     }
-    /* Star rating */
-    .star-rating {
-      margin-top: 12px;
-      display: flex;
-      gap: 4px;
-      font-size: 1.1rem;
+    .gallery-item img {
+      width: 100%; height: 100%; min-height: 240px;
+      object-fit: cover; display: block;
+      transition: transform 0.5s ease;
     }
-    .star-filled {
-      color: #f5b042;
-    }
-    .star-empty {
-      color: #e0cfbc;
-    }
+    .gallery-item:hover img { transform: scale(1.04); }
+    .view-more-wrap { text-align: center; margin-top: 40px; }
 
-    /* contact section */
-    .contact-flex {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
+    /* ─── TESTIMONIALS ───────────────────────────────── */
+    .testi-section { background: var(--cream-alt); }
+    .testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 56px; }
+    .testi-card {
+      background: #fff; border-radius: 6px; padding: 36px 30px;
+      border: 1px solid var(--border); position: relative;
     }
-    .contact-info, .contact-form {
-      flex: 1;
-      background: white;
-      border-radius: 32px;
-      padding: 32px;
+    .testi-quote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 4rem; color: var(--gold); line-height: 1;
+      position: absolute; top: 16px; right: 24px; opacity: 0.35;
+    }
+    .testi-stars { display: flex; gap: 3px; color: var(--gold); margin-bottom: 18px; font-size: 0.9rem; }
+    .testi-text {
+      font-size: 0.95rem; color: var(--charcoal); line-height: 1.75;
+      font-style: italic; margin-bottom: 24px;
+    }
+    .testi-author { display: flex; align-items: center; gap: 14px; }
+    .testi-avatar {
+      width: 52px; height: 52px; border-radius: 50%;
+      background: var(--green-rich); display: flex; align-items: center;
+      justify-content: center; color: var(--gold-light);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem; font-weight: 700;
+      flex-shrink: 0; border: 2px solid var(--gold);
+    }
+    .testi-avatar img {
+      width: 100%; height: 100%; border-radius: 50%; object-fit: cover;
+    }
+    .testi-name { font-weight: 600; font-size: 0.9rem; color: var(--green-deep); }
+    .testi-role { font-size: 0.78rem; color: var(--warm-gray); margin-top: 2px; }
+
+    /* ─── CTA BANNER ─────────────────────────────────── */
+    .cta-section {
+      position: relative; overflow: hidden;
+      padding: 120px 0;
+    }
+    .cta-bg {
+      position: absolute; inset: 0;
+      background: url('./cta-banner.jpg') center/cover no-repeat;
+    }
+    .cta-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(14,28,12,0.92) 0%, rgba(22,42,19,0.85) 100%);
+    }
+    .cta-content {
+      position: relative; z-index: 2;
+      text-align: center; max-width: 700px; margin: 0 auto;
+    }
+    .cta-content .section-eyebrow { justify-content: center; color: var(--gold-light); }
+    .cta-content .section-eyebrow::after { background: var(--gold-light); }
+    .cta-content h2 { font-size: clamp(2rem, 4vw, 3.2rem); color: #fff; margin-bottom: 18px; }
+    .cta-content p { color: rgba(255,255,255,0.65); font-size: 1rem; margin-bottom: 40px; line-height: 1.7; }
+    .cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+    /* ─── CONTACT ────────────────────────────────────── */
+    .contact-section { background: var(--cream); }
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 64px;
+      margin-top: 56px; align-items: start;
+    }
+    .contact-detail {
+      display: flex; align-items: flex-start; gap: 16px;
+      margin-bottom: 28px;
+    }
+    .contact-icon {
+      width: 44px; height: 44px; border-radius: 4px;
+      background: var(--cream-alt); border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--gold); font-size: 1rem; flex-shrink: 0;
+    }
+    .contact-label { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.10em; text-transform: uppercase; color: var(--warm-gray); margin-bottom: 4px; }
+    .contact-value { font-size: 0.95rem; color: var(--charcoal); }
+    .contact-value a { color: var(--green-rich); text-decoration: none; }
+    .contact-value a:hover { color: var(--gold); }
+    .map-wrap { border-radius: 6px; overflow: hidden; height: 220px; margin-top: 32px; border: 1px solid var(--border); }
+    .map-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+    .form-wrap {
+      background: #fff; border: 1px solid var(--border);
+      border-radius: 6px; padding: 40px 36px;
       box-shadow: var(--shadow-sm);
     }
-    .map-container {
-      margin-top: 24px;
-      border-radius: 24px;
-      overflow: hidden;
-      height: 240px;
-      box-shadow: var(--shadow-sm);
+    .form-wrap h3 { font-size: 1.8rem; color: var(--green-deep); margin-bottom: 8px; }
+    .form-wrap .form-sub { font-size: 0.88rem; color: var(--warm-gray); margin-bottom: 28px; }
+    .form-group { margin-bottom: 16px; }
+    .form-group label { display: block; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--warm-gray); margin-bottom: 6px; }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%; padding: 12px 16px;
+      border: 1px solid var(--border); border-radius: 4px;
+      background: var(--cream); font-size: 0.9rem;
+      font-family: 'Inter', sans-serif;
+      color: var(--charcoal); transition: border-color 0.2s;
     }
-    .map-container iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
+    .form-group input:focus,
+    .form-group textarea:focus { outline: none; border-color: var(--green-light); }
+    .form-group textarea { resize: vertical; min-height: 90px; border-radius: 4px; }
+    .btn-submit {
+      width: 100%; background: var(--green-rich); color: #fff;
+      padding: 14px; border: none; border-radius: 4px;
+      font-size: 0.88rem; font-weight: 600; letter-spacing: 0.08em;
+      text-transform: uppercase; cursor: pointer; transition: background 0.2s;
+      font-family: 'Inter', sans-serif; margin-top: 8px;
     }
-    input, select, textarea {
-      width: 100%;
-      padding: 12px 16px;
-      margin: 8px 0 16px;
-      border: 1px solid #ecdacb;
-      border-radius: 48px;
-      background: #fffcf8;
-      font-size: 1rem;
+    .btn-submit:hover { background: var(--green-deep); }
+    .form-alt {
+      text-align: center; margin-top: 18px;
+      font-size: 0.8rem; color: var(--warm-gray);
     }
-    textarea {
-      border-radius: 24px;
+    .form-alt a {
+      color: var(--green-rich); font-weight: 600; text-decoration: none;
     }
-    button[type="submit"] {
-      background: #d9895b;
-      border: none;
-      color: white;
-      padding: 12px 24px;
-      border-radius: 40px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: 0.2s;
-    }
-    button[type="submit"]:hover {
-      background: #c06f41;
-    }
+    .form-alt a:hover { color: var(--gold); }
 
-    /* Google Form Button */
-    .google-form-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: #4285f4;
-      color: white;
-      padding: 12px 24px;
-      border-radius: 40px;
-      text-decoration: none;
-      font-weight: 600;
-      margin-top: 15px;
-      transition: 0.2s;
-    }
-    .google-form-btn:hover {
-      background: #3367d6;
-      transform: translateY(-2px);
-    }
-
-    /* Footer */
+    /* ─── FOOTER ─────────────────────────────────────── */
     footer {
-      background: #2f3e2c;
-      color: #e9f0e4;
-      padding: 48px 0 32px;
-      border-radius: 40px 40px 0 0;
+      background: var(--green-deep);
+      padding: 72px 0 36px;
     }
     .footer-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 32px;
-      margin-bottom: 32px;
+      display: grid;
+      grid-template-columns: 1.6fr 1fr 1fr 1fr;
+      gap: 48px; margin-bottom: 56px;
     }
-    .footer-logo h3 {
-      color: #fae5cf;
-      font-size: 1.6rem;
+    .footer-brand .logo-name { color: var(--gold-light); font-size: 1.4rem; }
+    .footer-brand .logo-tagline { color: rgba(255,255,255,0.40); margin-top: 2px; }
+    .footer-desc {
+      font-size: 0.85rem; color: rgba(255,255,255,0.40);
+      line-height: 1.8; margin-top: 16px; max-width: 260px;
     }
-    .social-icons i {
-      font-size: 1.6rem;
-      margin-right: 18px;
-      transition: 0.2s;
-      cursor: pointer;
+    .footer-social { display: flex; gap: 12px; margin-top: 24px; }
+    .footer-social a {
+      width: 36px; height: 36px; border-radius: 4px;
+      border: 1px solid rgba(255,255,255,0.12);
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,0.50); font-size: 0.9rem;
+      text-decoration: none; transition: all 0.2s;
     }
-    /* CHANGE 2: WhatsApp icon in footer now links to your WhatsApp */
-    .social-icons a {
-      text-decoration: none;
-      color: #fbe3ce;
+    .footer-social a:hover { border-color: var(--gold); color: var(--gold); }
+    .footer-col h4 {
+      font-family: 'Inter', sans-serif; font-size: 0.72rem;
+      font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+      color: rgba(255,255,255,0.35); margin-bottom: 20px;
     }
-    .social-icons a:hover i {
-      color: #25D366;
-      transform: scale(1.1);
+    .footer-col a {
+      display: block; font-size: 0.88rem;
+      color: rgba(255,255,255,0.55); text-decoration: none;
+      margin-bottom: 12px; transition: color 0.2s;
     }
-    .quick-links a {
-      color: #dfcca9;
-      text-decoration: none;
-      display: block;
-      margin-bottom: 10px;
+    .footer-col a:hover { color: var(--gold-light); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.07);
+      padding-top: 28px; display: flex;
+      align-items: center; justify-content: space-between;
+      font-size: 0.78rem; color: rgba(255,255,255,0.25);
     }
-    .copyright {
-      text-align: center;
-      border-top: 1px solid rgba(255,255,240,0.15);
-      padding-top: 28px;
-      font-size: 0.85rem;
+    .footer-bottom a { color: rgba(255,255,255,0.35); text-decoration: none; }
+
+    /* ─── CHATBOT ────────────────────────────────────── */
+    .chatbot-float {
+      position: fixed; bottom: 28px; right: 28px;
+      background: var(--green-rich); width: 56px; height: 56px;
+      border-radius: 50%; display: flex; align-items: center;
+      justify-content: center; box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+      cursor: pointer; z-index: 1000; transition: all 0.3s;
+      border: none; color: #fff; font-size: 1.4rem;
+    }
+    .chatbot-float:hover { background: var(--gold); transform: scale(1.08); }
+
+    /* ─── UTILITIES ──────────────────────────────────── */
+    .btn-outline-gold {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent; border: 2px solid var(--gold);
+      color: var(--gold); padding: 12px 28px; border-radius: 4px;
+      font-size: 0.82rem; font-weight: 600; letter-spacing: 0.08em;
+      text-transform: uppercase; text-decoration: none; transition: all 0.2s;
+    }
+    .btn-outline-gold:hover { background: var(--gold); color: var(--green-deep); }
+    .btn-solid-gold {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--gold); border: 2px solid var(--gold);
+      color: var(--green-deep); padding: 12px 28px; border-radius: 4px;
+      font-size: 0.82rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; text-decoration: none; transition: all 0.2s;
+    }
+    .btn-solid-gold:hover { background: var(--gold-bright); border-color: var(--gold-bright); }
+    .btn-solid-green {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--green-rich); border: 2px solid var(--green-rich);
+      color: #fff; padding: 12px 28px; border-radius: 4px;
+      font-size: 0.82rem; font-weight: 600; letter-spacing: 0.08em;
+      text-transform: uppercase; text-decoration: none; transition: all 0.2s;
+    }
+    .btn-solid-green:hover { background: var(--green-deep); border-color: var(--green-deep); }
+
+    /* ─── MATERIAL STRIP ─────────────────────────────── */
+    .material-strip {
+      overflow: hidden; background: var(--green-deep);
+      padding: 16px 0; border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .material-track {
+      display: flex; gap: 16px;
+      animation: materialScroll 28s linear infinite;
+      width: max-content;
+    }
+    .material-track:hover { animation-play-state: paused; }
+    @keyframes materialScroll {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+    .material-item {
+      flex-shrink: 0; width: 280px; position: relative;
+      border-radius: 6px; overflow: hidden; cursor: pointer;
+    }
+    .material-item img {
+      width: 100%; height: 170px; object-fit: cover; display: block;
+      filter: brightness(0.75) saturate(0.9);
+      transition: filter 0.4s, transform 0.5s;
+    }
+    .material-item:hover img { filter: brightness(0.9) saturate(1.1); transform: scale(1.04); }
+    .material-item span {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      padding: 28px 14px 12px;
+      background: linear-gradient(to top, rgba(14,28,12,0.85), transparent);
+      color: #fff; font-size: 0.78rem; font-weight: 600;
+      letter-spacing: 0.10em; text-transform: uppercase;
     }
 
-    .motif-bg {
-      background-image: radial-gradient(circle at 10% 20%, rgba(217, 137, 91, 0.03) 2%, transparent 2.5%);
-      background-size: 28px 28px;
+    .text-center { text-align: center; }
+    .mx-auto { margin-left: auto; margin-right: auto; }
+
+    /* ─── RESPONSIVE ─────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .why-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+      }
+      .g1,.g2,.g3,.g4,.g5,.g6 { grid-column: span 1; grid-row: span 1; }
     }
 
-    @media (max-width: 800px) {
-      .nav-flex {
-        flex-direction: column;
-        gap: 16px;
+    @media (max-width: 768px) {
+      .container { padding: 0 20px; }
+      section { padding: 64px 0; }
+
+      .nav-links, .btn-nav { display: none; }
+      .hamburger { display: flex; }
+      .mobile-nav {
+        position: fixed; top: 78px; left: 0; right: 0;
+        background: rgba(250,248,243,0.98); backdrop-filter: blur(12px);
+        padding: 20px; border-bottom: 1px solid var(--border);
+        z-index: 199;
       }
-      .hero-content h1 {
-        font-size: 2.2rem;
+      .mobile-nav.open { display: block; }
+      .mobile-nav ul { list-style: none; }
+      .mobile-nav ul li { border-bottom: 1px solid var(--border); }
+      .mobile-nav ul li a {
+        display: block; padding: 14px 0;
+        font-size: 1rem; font-weight: 500;
+        color: var(--green-deep); text-decoration: none;
       }
-      .container {
-        padding: 0 20px;
+      .mobile-nav .btn-nav {
+        display: inline-flex; margin-top: 16px; width: 100%; justify-content: center;
       }
-      section {
-        padding: 50px 0;
-      }
-      .chatbot-float {
-        width: 50px;
-        height: 50px;
-        font-size: 24px;
-        bottom: 20px;
-        right: 20px;
-      }
+
+      .hero-content h1 { font-size: 2.4rem; }
+      .stats-inner { grid-template-columns: repeat(2, 1fr); }
+      .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+      .about-img-accent { display: none; }
+      .programs-grid { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
+      .testi-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .g1,.g2,.g3,.g4,.g5,.g6 { grid-column: span 1; grid-row: span 1; }
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+      .why-top { flex-direction: column; align-items: flex-start; }
+      .gallery-header { flex-direction: column; align-items: flex-start; }
     }
   </style>
 </head>
-<body class="motif-bg">
-  <nav class="navbar">
-    <div class="container nav-flex">
-      <div class="logo">
-        <div class="logo-icon"><i class="fas fa-tree"></i></div>
-        <h1>Little Gurukul <span style="font-weight:400">Preschool</span></h1>
+<body>
+
+<!-- ─── NAVBAR ─────────────────────────────────────────── -->
+<nav class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#" class="logo-wrap">
+      <!-- Inline SVG Logo -->
+      <div class="logo-svg-wrap">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="54" height="54">
+          <defs>
+            <clipPath id="logoClip">
+              <circle cx="100" cy="100" r="91"/>
+            </clipPath>
+          </defs>
+          <circle cx="100" cy="100" r="94" fill="#FAF8F3" stroke="#7B3D1E" stroke-width="3.5"/>
+          <!-- Sun glow -->
+          <circle cx="100" cy="62" r="18" fill="#D4A843" opacity="0.25"/>
+          <circle cx="100" cy="64" r="12" fill="#D4A843"/>
+          <!-- Sun rays -->
+          <line x1="100" y1="44" x2="100" y2="37" stroke="#D4A843" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="116" y1="48" x2="120" y2="42" stroke="#D4A843" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="84"  y1="48" x2="80"  y2="42" stroke="#D4A843" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="126" y1="60" x2="133" y2="58" stroke="#D4A843" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="74"  y1="60" x2="67"  y2="58" stroke="#D4A843" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- Foliage clusters -->
+          <ellipse cx="100" cy="100" rx="30" ry="24" fill="#3A6633"/>
+          <ellipse cx="76"  cy="110" rx="22" ry="17" fill="#4A7040"/>
+          <ellipse cx="124" cy="110" rx="22" ry="17" fill="#4A7040"/>
+          <ellipse cx="100" cy="118" rx="16" ry="12" fill="#3A6633"/>
+          <!-- individual leaves hint -->
+          <circle cx="88"  cy="93"  r="7" fill="#5A8050"/>
+          <circle cx="112" cy="93"  r="7" fill="#5A8050"/>
+          <circle cx="100" cy="88"  r="8" fill="#5A8050"/>
+          <!-- Trunk -->
+          <rect x="92" y="126" width="16" height="22" rx="4" fill="#5C3318"/>
+          <!-- Roots -->
+          <path d="M 92 146 Q 74 155 62 166" stroke="#5C3318" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+          <path d="M 100 148 Q 100 158 98 170" stroke="#5C3318" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+          <path d="M 108 146 Q 126 155 138 166" stroke="#5C3318" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+          <path d="M 86 148 Q 72 160 68 172" stroke="#5C3318" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path d="M 114 148 Q 128 160 132 172" stroke="#5C3318" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <!-- Arched text clipped inside circle -->
+          <g clip-path="url(#logoClip)">
+            <path id="topArc" d="M 18 100 A 82 82 0 0 1 182 100" fill="none"/>
+            <text font-family="Georgia, serif" font-size="13.5" font-weight="bold" fill="#B8892A" letter-spacing="2.8">
+              <textPath href="#topArc" startOffset="9%">LITTLE GURUKUL</textPath>
+            </text>
+            <path id="btmArc" d="M 34 148 A 72 72 0 0 0 166 148" fill="none"/>
+            <text font-family="Georgia, serif" font-size="11" fill="#3A6633" letter-spacing="2.5">
+              <textPath href="#btmArc" startOffset="14%">PRESCHOOL</textPath>
+            </text>
+          </g>
+        </svg>
       </div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#programs">Programs</a></li>
-        <li><a href="#facilities">Facilities</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <div class="logo-text-block">
+        <span class="logo-name">Little Gurukul</span>
+        <span class="logo-tagline">Montessori · Kundli</span>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#why">Philosophy</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <a href="https://forms.gle/G7MWDxuNmVPVtdtA8" target="_blank" class="btn-nav">
+      <i class="fas fa-calendar-check"></i> Book a Visit
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <ul>
+    <li><a href="#about" class="mobile-link">About</a></li>
+    <li><a href="#programs" class="mobile-link">Programs</a></li>
+    <li><a href="#why" class="mobile-link">Philosophy</a></li>
+    <li><a href="#gallery" class="mobile-link">Gallery</a></li>
+    <li><a href="#contact" class="mobile-link">Contact</a></li>
+  </ul>
+  <a href="https://forms.gle/G7MWDxuNmVPVtdtA8" target="_blank" class="btn-nav">
+    <i class="fas fa-calendar-check"></i> Book a Visit
+  </a>
+</div>
+
+<main>
+  <!-- ─── HERO ────────────────────────────────────────── -->
+  <section class="hero">
+    <!-- Image Slider -->
+    <div class="hero-slider" id="heroSlider">
+      <div class="hero-slide active" style="background-image:url('./hero1.jpg')"></div>
+      <div class="hero-slide"        style="background-image:url('./hero2.jpg')"></div>
+      <div class="hero-slide"        style="background-image:url('./hero3.jpg')"></div>
+      <div class="hero-slide"        style="background-image:url('./hero4.jpg')"></div>
+      <div class="hero-slide"        style="background-image:url('./hero5.jpg')"></div>
     </div>
-  </nav>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <div class="hero-badge"><i class="fas fa-seedling"></i> Montessori + Gurukul Wisdom</div>
-          <h1>Nurturing Young Minds the Montessori Way</h1>
-          <div class="hero-sub">Safety, holistic development & joyful learning — where tradition meets child-led discovery.</div>
-          <div class="btn-group">
-            <a href="https://forms.gle/G7MWDxuNmVPVtdtA8" target="_blank" class="btn btn-visit"><i class="fas fa-calendar-check"></i> Book a Visit</a>
-            <a href="https://forms.gle/G7MWDxuNmVPVtdtA8" target="_blank" class="btn btn-enroll"><i class="fas fa-child"></i> Enroll Now</a>
-          </div>
-        </div>
-        <div class="hero-image">
-          <img src="https://placehold.co/600x500/FDF3E8/C78F5D?text=Children+Learning+Montessori" alt="Children engaged in hands-on learning" style="background:#f2e3d8;">
-        </div>
-      </div>
-    </section>
+    <div class="hero-overlay"></div>
 
-    <!-- About Us -->
-    <section id="about" class="bg-soft">
-      <div class="container">
-        <div class="section-title">
-          <h2>Where Gurukul Meets Montessori</h2>
-          <p>Rooted in Indian values, blossoming with modern pedagogy.</p>
-        </div>
-        <div style="max-width: 880px; margin: 0 auto; text-align: center; font-size: 1.1rem; line-height: 1.5;">
-          <p>Little Gurukul Preschool blends the time-honored Gurukul principles of <strong>respect, discipline, and curiosity</strong> with the <strong>Montessori method</strong> of independence and experiential learning. Our environment fosters each child's natural development — sensorial, practical life, and cultural awareness — creating lifelong learners who are kind, confident, and creative.</p>
-          <div style="margin-top: 28px; display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;">
-            <span><i class="fas fa-om" style="color:#b97f51"></i> Mindful Values</span>
-            <span><i class="fas fa-hands-helping"></i> Independence</span>
-            <span><i class="fas fa-puzzle-piece"></i> Hands-on Discovery</span>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Caption per slide -->
+    <div class="hero-caption" id="heroCaption">
+      <i class="fas fa-circle" style="font-size:0.5rem;"></i>
+      <span id="heroCaptionText">Hands-On Montessori Learning</span>
+    </div>
 
-    <!-- Programs / Curriculum -->
-    <section id="programs">
-      <div class="container">
-        <div class="section-title">
-          <h2>Our Programs</h2>
-          <p>Age-appropriate journeys for every milestone</p>
-        </div>
-        <div class="grid-3">
-          <div class="card"><i class="fas fa-puzzle-piece icon-lg"></i><div class="program-age">Playgroup | 1.5–2.5 Years</div><h3>Sensory & Movement</h3><p>Exploration through tactile materials, music, and practical life routines. Building motor skills and trust.</p></div>
-          <div class="card"><i class="fas fa-leaf icon-lg"></i><div class="program-age">Nursery | 2.5–3.5 Years</div><h3>Language & Culture</h3><p>Montessori language materials, storytelling, nature walks, and introduction to numbers & cultural festivities.</p></div>
-          <div class="card"><i class="fas fa-dharmachakra icon-lg"></i><div class="program-age">Kindergarten | 3.5–6 Years</div><h3>Advanced Montessori</h3><p>Reading, writing, arithmetic, geography, and leadership skills. Emphasis on grace, courtesy, and collaborative projects.</p></div>
-        </div>
-        <div style="margin-top: 32px; text-align:center;"><i class="fas fa-hand-sparkles"></i> Hands-on activities: pouring, sorting, sensorial bins, art, and nature journaling</div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-seedling"></i> Montessori Preschool · Gurukul Values · Kundli, Haryana
       </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section class="bg-soft">
-      <div class="container">
-        <div class="section-title"><h2>Why Choose Little Gurukul?</h2><p>Trust built on excellence and care</p></div>
-        <div class="grid-4">
-          <div class="card"><div class="why-icon"><i class="fas fa-chalkboard-user"></i></div><h3>Certified Montessori educators</h3><p>AMI/AMS trained guides who nurture each child's potential.</p></div>
-          <div class="card"><div class="why-icon"><i class="fas fa-shield-alt"></i></div><h3>Safe & hygienic environment</h3><p>Child-proofed spaces, CCTV, regular sanitization.</p></div>
-          <div class="card"><div class="why-icon"><i class="fas fa-users"></i></div><h3>Low student-teacher ratio</h3><p>1:8 ratio ensures personalized attention.</p></div>
-          <div class="card"><div class="why-icon"><i class="fas fa-brain"></i></div><h3>Emotional & social development</h3><p>Mindfulness corners, yoga, and circle time for empathy.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Facilities -->
-    <section id="facilities">
-      <div class="container">
-        <div class="section-title"><h2>Our Nurturing Spaces</h2><p>Designed to spark wonder</p></div>
-        <div class="facility-grid">
-          <div class="card"><i class="fas fa-sun icon-lg"></i><h3>Bright Classrooms</h3><p>Montessori shelves, natural light, child-sized furniture</p></div>
-          <div class="card"><i class="fas fa-cubes icon-lg"></i><h3>Learning Materials</h3><p>Premium sensorial & math materials, practical life tools</p></div>
-          <div class="card"><i class="fas fa-tree icon-lg"></i><h3>Outdoor Play Area</h3><p>Gardens, sandpit, climbing structures with safety flooring</p></div>
-          <div class="card"><i class="fas fa-heartbeat icon-lg"></i><h3>Safety Features</h3><p>Soft corners, non-toxic paint, emergency protocols</p></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Gallery -->
-    <section class="bg-soft">
-      <div class="container">
-        <div class="section-title"><h2>Moments of Joy</h2><p>Glimpses of little learners in action</p></div>
-        <div class="gallery-grid">
-          <div class="gallery-item"><img src="https://placehold.co/400x400/FCE8DF/C28659?text=Montessori+Work" alt="classroom"></div>
-          <div class="gallery-item"><img src="https://placehold.co/400x400/F2DFD1/BA7A4A?text=Outdoor+Play" alt="play area"></div>
-          <div class="gallery-item"><img src="https://placehold.co/400x400/EEDBCE/B77C4E?text=Happy+Children" alt="happy children"></div>
-          <div class="gallery-item"><img src="https://placehold.co/400x400/F8E8DF/C18759?text=Sensory+Learning" alt="sensory bin"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section>
-      <div class="container">
-        <div class="section-title"><h2>Loving Words from Parents</h2><p>Trust & happiness shared</p></div>
-        <div class="testimonial-grid">
-          <div class="testimonial-card">
-            <div class="parent-info"><div class="parent-img"><i class="fas fa-user-circle"></i></div><div><strong>Mrs. Sharma</strong><br>Mother of Aarav (KG)</div></div>
-            <div class="testimonial-text">"Little Gurukul gave my son independence with discipline. The blend of Montessori and Indian values is exactly what we wanted. He loves going to school!"</div>
-            <div class="star-rating"><i class="fas fa-star star-filled"></i><i class="fas fa-star star-filled"></i><i class="fas fa-star star-filled"></i><i class="fas fa-star star-filled"></i><i class="fas fa-star star-filled"></i></div>
-          </div>
-          <div class="testimonial-card">
-            <div class="parent-info"><div class="parent-img"><i class="fas fa-user"></i></div><div><strong>Mr. & Mrs. Reddy</strong><br>Parents of Ananya</div></div>
-            <div class="testimonial-text">"The teachers are so warm and certified. The environment is safe and we see her practical life skills improving every day."</div>
-            <div class="star-rating"><i class="fas fa-star star-filled"></i><i class="fas fa-star star-filled"></i><i class="fas fa-star star-filled"></i><i class="fas fa-star star-filled"></i><i class="fas fa-star star-empty"></i></div>
-          </div>
-          <div class="testimonial-card">
-            <div class="parent-info"><div class="parent-img"><i class="fas fa-user-friends"></i></div><div><strong>Ms. Kaur</strong><br>Mother of Veer (Nursery)</div></div>
-            <div class="testimonial-text">"The low student-teacher ratio makes all the difference. My son feels heard and respected. Highly recommend!"</div>
-            <div class="star-rating"><i class="fas fa-star star-filled"></i><i class="fas fa-star star-filled"></i><i class="fas fa-star star-filled"></i><i class="fas fa-star star-filled"></i><i class="fas fa-star star-filled"></i></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact & Location -->
-    <section id="contact" class="bg-soft">
-      <div class="container">
-        <div class="section-title"><h2>Connect With Us</h2><p>We'd love to show you our school</p></div>
-        <div class="contact-flex">
-          <div class="contact-info">
-            <i class="fas fa-map-marker-alt" style="font-size: 1.8rem; color:#b97f51;"></i>
-            <h3>Little Gurukul Preschool</h3>
-            <p><strong>📍 Address:</strong> Hno. 219 Sec 53, HSIIDC Kundli, Haryana - 131001</p>
-            <p><i class="fas fa-phone-alt"></i> <strong>Phone:</strong> <a href="tel:+919582308938" style="color:#b97f51; text-decoration:none;">9582308938</a></p>
-            <p><i class="fas fa-envelope"></i> hello@littlegurukul.com</p>
-            <div class="map-container">
-              <iframe src="https://www.google.com/maps?q=28.8657575,77.1421404&z=17&hl=en&output=embed" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-            <p style="margin-top: 12px; font-size: 0.85rem;"><i class="fas fa-location-dot"></i> Sector 53, HSIIDC Kundli — come visit our green campus!</p>
-          </div>
-          <div class="contact-form">
-            <h3>Inquire Now</h3>
-            <form id="inquiryForm">
-              <input type="text" id="parentName" placeholder="Parent's Full Name" required>
-              <input type="tel" id="phoneNumber" placeholder="Phone Number" required>
-              <input type="text" id="childAge" placeholder="Child's Age (e.g., 2.5 years)">
-              <textarea id="message" rows="2" placeholder="Message / Query"></textarea>
-              <button type="submit">Send Inquiry <i class="fas fa-paper-plane"></i></button>
-            </form>
-            <!-- CHANGE 4: Google Form link added below the form -->
-            <div style="text-align: center; margin-top: 20px; padding-top: 15px; border-top: 1px solid #ecdacb;">
-              <a href="https://docs.google.com/forms/d/e/1sVWIk4h-HX0eLDoC9SjX48ATuNOG0AezJOkXzUzcP8c/viewform?embedded=true" target="_blank" class="google-form-btn">
-                <i class="fas fa-google"></i> Fill Google Admission Form
-              </a>
-              <p style="font-size: 0.8rem; margin-top: 10px; color: #6b5a4e;">Prefer Google Forms? Click above!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-logo"><h3>Little Gurukul Preschool</h3><p style="margin-top: 8px;">Nurturing roots, growing wings</p></div>
-        <!-- CHANGE 2: WhatsApp icon now links to your WhatsApp number -->
-        <div class="social-icons">
-          <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-          <a href="https://wa.me/919582308938?text=Hello%21%20I%27m%20interested%20in%20Little%20Gurukul%20Preschool" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        </div>
-        <div class="quick-links">
-          <a href="#">About Us</a>
-          <a href="#">Programs</a>
-          <a href="#">Gallery</a>
-          <a href="#">Careers</a>
-        </div>
-      </div>
-      <div class="copyright">
-        <p>© 2025 Little Gurukul Preschool — Where tradition & Montessori dance together. All rights reserved. | 📞 9582308938</p>
+      <h1>Where <em>Curious Minds</em><br>Grow Into<br>Confident Souls</h1>
+      <p class="hero-sub">A premium Montessori preschool rooted in Indian tradition — fostering independence, joy, and lifelong love of learning.</p>
+      <div class="hero-btns">
+        <a href="https://forms.gle/G7MWDxuNmVPVtdtA8" target="_blank" class="btn-hero-primary">
+          <i class="fas fa-child"></i> Enroll Now
+        </a>
+        <a href="#programs" class="btn-hero-outline">
+          <i class="fas fa-book-open"></i> Explore Programs
+        </a>
       </div>
     </div>
-  </footer>
 
-  <!-- CHANGE 1: ONLY ONE Chatbot Icon (removed the duplicate) -->
-  <div id="chatbotTrigger" class="chatbot-float">
-    <i class="fas fa-comment-dots"></i>
+    <!-- Slide Dots -->
+    <div class="hero-dots" id="heroDots"></div>
+
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ─── MONTESSORI MATERIAL STRIP ────────────────────── -->
+  <div class="material-strip">
+    <div class="material-track" id="materialTrack">
+      <!-- duplicated for infinite loop -->
+      <div class="material-item"><img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=420&h=280&fit=crop&q=80" alt="Montessori golden beads"><span>Golden Beads</span></div>
+      <div class="material-item"><img src="https://images.unsplash.com/photo-1587100561817-cb4cfebf2e89?w=420&h=280&fit=crop&q=80" alt="Sensorial Materials"><span>Sensorial Materials</span></div>
+      <div class="material-item"><img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=420&h=280&fit=crop&q=80" alt="Prepared Environment"><span>Prepared Environment</span></div>
+      <div class="material-item"><img src="https://images.unsplash.com/photo-1544717305-2782549b5136?w=420&h=280&fit=crop&q=80" alt="Practical Life"><span>Practical Life</span></div>
+      <div class="material-item"><img src="https://images.unsplash.com/photo-1588072432836-e10032774350?w=420&h=280&fit=crop&q=80" alt="Language Work"><span>Language Work</span></div>
+      <div class="material-item"><img src="https://images.unsplash.com/photo-1516627145497-ae6968895b24?w=420&h=280&fit=crop&q=80" alt="Math Materials"><span>Math Materials</span></div>
+      <!-- duplicate for seamless loop -->
+      <div class="material-item"><img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=420&h=280&fit=crop&q=80" alt="Montessori golden beads"><span>Golden Beads</span></div>
+      <div class="material-item"><img src="https://images.unsplash.com/photo-1587100561817-cb4cfebf2e89?w=420&h=280&fit=crop&q=80" alt="Sensorial Materials"><span>Sensorial Materials</span></div>
+      <div class="material-item"><img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=420&h=280&fit=crop&q=80" alt="Prepared Environment"><span>Prepared Environment</span></div>
+      <div class="material-item"><img src="https://images.unsplash.com/photo-1544717305-2782549b5136?w=420&h=280&fit=crop&q=80" alt="Practical Life"><span>Practical Life</span></div>
+      <div class="material-item"><img src="https://images.unsplash.com/photo-1588072432836-e10032774350?w=420&h=280&fit=crop&q=80" alt="Language Work"><span>Language Work</span></div>
+      <div class="material-item"><img src="https://images.unsplash.com/photo-1516627145497-ae6968895b24?w=420&h=280&fit=crop&q=80" alt="Math Materials"><span>Math Materials</span></div>
+    </div>
   </div>
 
-  <!-- Landbot Chatbot Integration (Only One) -->
-  <script>
-    window.addEventListener('mouseover', initLandbot, { once: true });
-    window.addEventListener('touchstart', initLandbot, { once: true });
-    var myLandbot;
-    function initLandbot() {
-      if (!myLandbot) {
-        var s = document.createElement('script');
-        s.type = "module";
-        s.async = true;
-        s.addEventListener('load', function() {
-          myLandbot = new Landbot.Popup({
-            configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-3388382-CWKXG9XN7CZ0FY14/index.json',
-          });
-        });
-        s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
-        var x = document.getElementsByTagName('script')[0];
-        x.parentNode.insertBefore(s, x);
-      }
-    }
-    document.getElementById('chatbotTrigger').addEventListener('click', function() {
-      if (typeof Landbot !== 'undefined' && myLandbot) {
-        myLandbot.open();
-      } else {
-        if (!myLandbot) {
-          var s = document.createElement('script');
-          s.type = "module";
-          s.async = true;
-          s.addEventListener('load', function() {
-            myLandbot = new Landbot.Popup({
-              configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-3388382-CWKXG9XN7CZ0FY14/index.json',
-            });
-            setTimeout(() => { if(myLandbot) myLandbot.open(); }, 200);
-          });
-          s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
-          var x = document.getElementsByTagName('script')[0];
-          x.parentNode.insertBefore(s, x);
-        } else {
-          myLandbot.open();
-        }
+  <!-- ─── STATS STRIP ──────────────────────────────────── -->
+  <div class="stats-strip">
+    <div class="container">
+      <div class="stats-inner">
+        <div class="stat-item">
+          <div class="stat-num">1 : 8</div>
+          <div class="stat-label">Student–Teacher Ratio</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Age-Tailored Programs</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">✓</div>
+          <div class="stat-label">Certified Educators</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Parent Satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── ABOUT ────────────────────────────────────────── -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-wrap">
+          <img
+            src="./about1.jpg"
+            alt="Children working with Montessori number rods"
+            class="about-img-main"
+          >
+          <img
+            src="./about2.jpg"
+            alt="Montessori number discs activity"
+            class="about-img-accent"
+          >
+        </div>
+        <div class="about-text">
+          <div class="section-eyebrow">Our Story</div>
+          <h2 class="section-title">Where Gurukul<br>Meets Montessori</h2>
+          <p class="section-sub" style="margin-bottom: 20px;">
+            Little Gurukul Preschool is Kundli's most trusted Montessori environment — blending the time-honored Gurukul principles of <strong>respect, curiosity, and discipline</strong> with the internationally acclaimed Montessori method.
+          </p>
+          <p style="font-size: 0.9rem; color: var(--warm-gray); line-height: 1.8;">
+            We believe every child is born with a natural drive to learn. Our prepared environment — rich with Montessori sensorial materials, practical life tools, and cultural wisdom — allows each child to discover, build, and flourish at their own pace. The result: children who are independent, empathetic, and genuinely in love with learning.
+          </p>
+          <a href="https://forms.gle/G7MWDxuNmVPVtdtA8" target="_blank" class="about-badge" style="margin-top: 32px;">
+            <i class="fas fa-map-marker-alt"></i> Sec 53, HSIIDC Kundli, Haryana – 131001
+          </a>
+          <div class="values-row">
+            <div class="value-item">
+              <span class="value-num">5+</span>
+              <span class="value-label">Years of Excellence</span>
+            </div>
+            <div class="value-item">
+              <span class="value-num">200+</span>
+              <span class="value-label">Happy Families</span>
+            </div>
+            <div class="value-item">
+              <span class="value-num">3</span>
+              <span class="value-label">Programs Offered</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROGRAMS ─────────────────────────────────────── -->
+  <section id="programs" class="programs-bg">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-eyebrow" style="justify-content: center;">Curriculum</div>
+        <h2 class="section-title">Age-Appropriate<br>Learning Journeys</h2>
+        <p class="section-sub mx-auto" style="text-align: center;">Every stage of childhood is precious. Our programs honour each developmental milestone.</p>
+      </div>
+      <div class="programs-grid">
+        <div class="program-card">
+          <img
+            src="./playgroup.jpg"
+            alt="Playgroup children with abacus and sensory materials"
+            class="program-img"
+          >
+          <div class="program-body">
+            <span class="program-age">Playgroup · 1.5 – 2.5 Years</span>
+            <h3>Sensory & Movement</h3>
+            <p>Exploration through tactile Montessori materials, music, practical life routines, and trusted adult relationships. Building motor skills, language, and confidence.</p>
+            <a href="#contact" class="program-link">Inquire <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="program-card">
+          <img
+            src="./nursery.jpg"
+            alt="Nursery children working in Montessori classroom"
+            class="program-img"
+          >
+          <div class="program-body">
+            <span class="program-age">Nursery · 2.5 – 3.5 Years</span>
+            <h3>Language & Culture</h3>
+            <p>Montessori language cards, storytelling, nature walks, cultural festivities, and introduction to numbers. A rich environment that sparks wonder at every corner.</p>
+            <a href="#contact" class="program-link">Inquire <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="program-card">
+          <img
+            src="./kindergarten.jpg"
+            alt="Kindergarten children in advanced Montessori work"
+            class="program-img"
+          >
+          <div class="program-body">
+            <span class="program-age">Kindergarten · 3.5 – 6 Years</span>
+            <h3>Advanced Montessori</h3>
+            <p>Reading, writing, arithmetic, geography, and leadership skills. Grace, courtesy, and collaborative inquiry — preparing children for primary school with joy.</p>
+            <a href="#contact" class="program-link">Inquire <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── WHY MONTESSORI ───────────────────────────────── -->
+  <section id="why" class="why-section">
+    <div class="container">
+      <div class="why-top">
+        <div>
+          <div class="section-eyebrow">Our Philosophy</div>
+          <h2 class="section-title" style="color:#fff; max-width:500px;">Why Choose<br>Little Gurukul?</h2>
+          <p class="section-sub" style="color:rgba(255,255,255,0.50);">Trust built on proven pedagogy, certified educators, and a deep love for childhood.</p>
+        </div>
+        <a href="https://forms.gle/G7MWDxuNmVPVtdtA8" target="_blank" class="why-link">
+          Book a School Tour <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-chalkboard-user"></i></div>
+          <h3>Certified Montessori Guides</h3>
+          <p>Every educator is formally trained in Montessori pedagogy — not just caretakers, but true guides who respect the child's inner drive.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-shield-halved"></i></div>
+          <h3>Safe & Hygienic Environment</h3>
+          <p>Child-proofed spaces, 24/7 CCTV surveillance, non-toxic materials, and rigorous daily sanitization protocols for complete peace of mind.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-users"></i></div>
+          <h3>Low Student–Teacher Ratio</h3>
+          <p>A strict 1:8 ratio ensures every child receives individualized attention, enabling our guides to truly see and nurture each learner.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-brain"></i></div>
+          <h3>Whole-Child Development</h3>
+          <p>Mindfulness corners, yoga, circle time, and cultural activities build emotional intelligence and social skills alongside academics.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-om"></i></div>
+          <h3>Rooted in Indian Values</h3>
+          <p>Gurukul wisdom — respect, discipline, curiosity — woven seamlessly with Montessori freedom. A uniquely Indian premium experience.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-leaf"></i></div>
+          <h3>Nature-Rich Campus</h3>
+          <p>Outdoor gardens, sandpit, climbing structures, and nature journaling bring children into joyful contact with the living world.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-puzzle-piece"></i></div>
+          <h3>Premium Montessori Materials</h3>
+          <p>Authentic, imported Montessori apparatus — pink tower, golden beads, moveable alphabet — that make abstract concepts beautifully concrete.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-heart"></i></div>
+          <h3>Parent as Partner</h3>
+          <p>Regular parent–guide meetings, detailed progress portfolios, and open-door communication keep families genuinely involved in their child's journey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── GALLERY ──────────────────────────────────────── -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <div class="gallery-header">
+        <div>
+          <div class="section-eyebrow">Our World</div>
+          <h2 class="section-title">Glimpses of<br>Little Gurukul</h2>
+        </div>
+        <p class="section-sub">Real moments of focus, joy, and discovery inside our prepared environment.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item g1">
+          <img src="./gallery1.jpg" alt="Indian girls planting in garden">
+        </div>
+        <div class="gallery-item g2">
+          <img src="./gallery2.jpg" alt="Colorful Montessori tiles activity">
+        </div>
+        <div class="gallery-item g3">
+          <img src="./gallery3.jpg" alt="Dropper precision exercise">
+        </div>
+        <div class="gallery-item g4">
+          <img src="./gallery4.jpg" alt="Toddler stacking rings">
+        </div>
+        <div class="gallery-item g5">
+          <img src="./gallery5.jpg" alt="Children painting outdoors">
+        </div>
+        <div class="gallery-item g6">
+          <img src="./gallery6.jpg" alt="Child with plant pot activity">
+        </div>
+      </div>
+      <div class="view-more-wrap">
+        <a href="https://www.instagram.com" target="_blank" class="btn-outline-gold">
+          <i class="fab fa-instagram"></i> Follow Us on Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TESTIMONIALS ─────────────────────────────────── -->
+  <section class="testi-section">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-eyebrow" style="justify-content: center;">Parent Stories</div>
+        <h2 class="section-title">Words from Our<br>School Families</h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <span class="testi-quote">"</span>
+          <div class="testi-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testi-text">"Little Gurukul gave my son independence with discipline. The blend of Montessori and Indian values is exactly what we wanted. He loves going to school every single day!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">S</div>
+            <div>
+              <div class="testi-name">Mrs. Sharma</div>
+              <div class="testi-role">Mother of Aarav · Kindergarten</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <span class="testi-quote">"</span>
+          <div class="testi-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testi-text">"The teachers are so warm and deeply certified. The environment feels safe and curated. We see Ananya's practical life skills improving every week — it's remarkable."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">R</div>
+            <div>
+              <div class="testi-name">Mr. & Mrs. Reddy</div>
+              <div class="testi-role">Parents of Ananya · Nursery</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <span class="testi-quote">"</span>
+          <div class="testi-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testi-text">"The low student-teacher ratio makes all the difference. Veer feels truly heard and respected here. The school's philosophy aligns perfectly with our values as parents."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">K</div>
+            <div>
+              <div class="testi-name">Ms. Kaur</div>
+              <div class="testi-role">Mother of Veer · Playgroup</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA BANNER ───────────────────────────────────── -->
+  <section class="cta-section">
+    <div class="cta-bg"></div>
+    <div class="cta-overlay"></div>
+    <div class="container">
+      <div class="cta-content">
+        <div class="section-eyebrow">Admissions Open</div>
+        <h2>Give Your Child the<br>Gift of a Prepared Mind</h2>
+        <p>Limited seats available for the 2025–26 academic year. Schedule a personal tour and experience Little Gurukul for yourself.</p>
+        <div class="cta-btns">
+          <a href="https://forms.gle/G7MWDxuNmVPVtdtA8" target="_blank" class="btn-solid-gold">
+            <i class="fas fa-child"></i> Apply for Admission
+          </a>
+          <a href="https://wa.me/919582308938?text=Hello!%20I%20am%20interested%20in%20Little%20Gurukul%20Preschool." target="_blank" class="btn-outline-gold">
+            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ──────────────────────────────────────── -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-eyebrow" style="justify-content: center;">Find Us</div>
+        <h2 class="section-title">Connect With<br>Little Gurukul</h2>
+        <p class="section-sub mx-auto" style="text-align: center; margin-bottom: 0;">We'd love to welcome you for a visit. Reach out and we'll get back to you within the hour.</p>
+      </div>
+      <div class="contact-grid">
+        <div>
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="contact-label">Address</div>
+              <div class="contact-value">Hno. 219, Sector 53, HSIIDC Kundli<br>Haryana – 131001</div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <div class="contact-label">Phone</div>
+              <div class="contact-value"><a href="tel:+919582308938">+91 95823 08938</a></div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value"><a href="mailto:hello@littlegurukul.com">hello@littlegurukul.com</a></div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <div class="contact-label">School Hours</div>
+              <div class="contact-value">Monday – Saturday · 8:30 AM – 1:00 PM</div>
+            </div>
+          </div>
+          <div class="map-wrap">
+            <iframe src="https://www.google.com/maps?q=28.8657575,77.1421404&z=17&hl=en&output=embed" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <div class="form-wrap">
+          <h3>Request Information</h3>
+          <p class="form-sub">Fill in your details and our admissions team will reach you shortly — or our AI agent will call you.</p>
+          <form id="inquiryForm">
+            <div class="form-group">
+              <label>Parent's Name</label>
+              <input type="text" id="parentName" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" id="phoneNumber" placeholder="+91 XXXXX XXXXX" required>
+            </div>
+            <div class="form-group">
+              <label>Child's Age</label>
+              <input type="text" id="childAge" placeholder="e.g. 2.5 years">
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea id="message" rows="3" placeholder="Any specific questions or requirements…"></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              Send Inquiry <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+          <div class="form-alt">
+            Prefer Google Forms? <a href="https://docs.google.com/forms/d/e/1sVWIk4h-HX0eLDoC9SjX48ATuNOG0AezJOkXzUzcP8c/viewform?embedded=true" target="_blank">Fill Admission Form →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ─── FOOTER ────────────────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text-block">
+          <span class="logo-name">Little Gurukul</span>
+          <span class="logo-tagline">Preschool · Est. 2019</span>
+        </div>
+        <p class="footer-desc">Nurturing curious minds through the Montessori method, grounded in the timeless wisdom of the Gurukul tradition.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://wa.me/919582308938?text=Hello!%20I%20am%20interested%20in%20Little%20Gurukul%20Preschool." target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <a href="#about">About Us</a>
+        <a href="#programs">Programs</a>
+        <a href="#why">Our Philosophy</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <a href="#programs">Playgroup (1.5–2.5 yrs)</a>
+        <a href="#programs">Nursery (2.5–3.5 yrs)</a>
+        <a href="#programs">Kindergarten (3.5–6 yrs)</a>
+        <a href="https://forms.gle/G7MWDxuNmVPVtdtA8" target="_blank">Admissions 2025–26</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+919582308938">+91 95823 08938</a>
+        <a href="mailto:hello@littlegurukul.com">hello@littlegurukul.com</a>
+        <a href="#">Sec 53, HSIIDC Kundli</a>
+        <a href="#">Haryana – 131001</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 Little Gurukul Preschool. All rights reserved.</span>
+      <span>Sector 53, HSIIDC Kundli · <a href="tel:+919582308938">+91 95823 08938</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- Chatbot Float -->
+<button id="chatbotTrigger" class="chatbot-float" aria-label="Chat with us">
+  <i class="fas fa-comment-dots"></i>
+</button>
+
+<!-- ─── SCRIPTS ────────────────────────────────────────── -->
+<script>
+  // Navbar scroll shadow
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 20);
+  });
+
+  // ── Hero Slider ──────────────────────────────────────
+  const slides   = document.querySelectorAll('.hero-slide');
+  const dotsWrap = document.getElementById('heroDots');
+  const captions = [
+    'Hands-On Montessori Learning',
+    'Our Prepared Classroom',
+    'Sensorial Discovery',
+    'Language & Culture',
+    'Collaborative Inquiry'
+  ];
+  let current = 0, sliderTimer;
+
+  // Build dots
+  slides.forEach((_, i) => {
+    const d = document.createElement('button');
+    d.className = 'hero-dot' + (i === 0 ? ' active' : '');
+    d.setAttribute('aria-label', 'Slide ' + (i+1));
+    d.addEventListener('click', () => goTo(i));
+    dotsWrap.appendChild(d);
+  });
+
+  function goTo(idx) {
+    slides[current].classList.remove('active');
+    dotsWrap.children[current].classList.remove('active');
+    current = idx;
+    slides[current].classList.add('active');
+    dotsWrap.children[current].classList.add('active');
+    document.getElementById('heroCaptionText').textContent = captions[current] || '';
+    clearInterval(sliderTimer);
+    sliderTimer = setInterval(advance, 5500);
+  }
+
+  function advance() { goTo((current + 1) % slides.length); }
+  sliderTimer = setInterval(advance, 5500);
+
+  // Hamburger
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+  hamburger.addEventListener('click', () => {
+    mobileNav.classList.toggle('open');
+  });
+  document.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener('click', () => mobileNav.classList.remove('open'));
+  });
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     });
-  </script>
+  });
 
-  <!-- CHANGE 3: Inquiry form now sends message to your WhatsApp -->
-  <script>
-      </script>
-
-<script>
-// Pipedream Webhook for AI Voice Call
-const WEBHOOK_URL = "https://eoi7s0g2oovhmk.m.pipedream.net";
-
-document.getElementById('inquiryForm').addEventListener('submit', async function(e) {
-    e.preventDefault();
-    
-    const parentName = document.getElementById('parentName').value;
-    const phoneNumber = document.getElementById('phoneNumber').value;
-    const childAge = document.getElementById('childAge').value;
-    const message = document.getElementById('message').value;
-    
-    const submitBtn = this.querySelector('button[type="submit"]');
-    const originalText = submitBtn.textContent;
-    submitBtn.textContent = 'Sending...';
-    submitBtn.disabled = true;
-    
-    try {
-        const response = await fetch(WEBHOOK_URL, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ parentName, phoneNumber, childAge, message })
+  // Landbot chatbot
+  window.addEventListener('mouseover', initLandbot, { once: true });
+  window.addEventListener('touchstart', initLandbot, { once: true });
+  var myLandbot;
+  function initLandbot() {
+    if (!myLandbot) {
+      var s = document.createElement('script');
+      s.type = 'module'; s.async = true;
+      s.addEventListener('load', function () {
+        myLandbot = new Landbot.Popup({
+          configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-3388382-CWKXG9XN7CZ0FY14/index.json',
         });
-        
-        if (response.ok) {
-            alert('✅ Success! Our AI agent will call you shortly.');
-            this.reset();
-        } else {
-            alert('❌ Error. Please call us directly at +91 9582308938');
-        }
-    } catch (error) {
-        alert('❌ Network error. Please call +91 9582308938');
-    } finally {
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
+      });
+      s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
+      document.head.appendChild(s);
     }
-});
+  }
+  document.getElementById('chatbotTrigger').addEventListener('click', function () {
+    if (typeof Landbot !== 'undefined' && myLandbot) {
+      myLandbot.open();
+    } else {
+      initLandbot();
+      setTimeout(() => { if (myLandbot) myLandbot.open(); }, 600);
+    }
+  });
 </script>
 
+<!-- Inquiry form → Pipedream webhook -->
 <script>
-// Pipedream Webhook for AI Voice Call
-const WEBHOOK_URL = "https://eo17s0g2oovhmk.m.pipedream.net";
-
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('#inquiryForm');
-    if (form) {
-        form.addEventListener('submit', async function(event) {
-            event.preventDefault();
-            
-            const parentName = document.querySelector('#parentName')?.value || '';
-            const phoneNumber = document.querySelector('#phoneNumber')?.value || '';
-            const childAge = document.querySelector('#childAge')?.value || '';
-            const message = document.querySelector('#message')?.value || '';
-            
-            const formData = {
-                parentName: parentName,
-                phoneNumber: phoneNumber,
-                childAge: childAge,
-                message: message,
-                timestamp: new Date().toISOString(),
-                source: "Little Gurukul Website"
-            };
-            
-            const submitBtn = form.querySelector('button[type="submit"]');
-            const originalText = submitBtn.textContent;
-            submitBtn.textContent = 'Sending...';
-            submitBtn.disabled = true;
-            
-            try {
-                const response = await fetch(WEBHOOK_URL, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(formData)
-                });
-                
-                if (response.ok) {
-                    alert('Thank you! Our admissions counselor will call you shortly.');
-                    form.reset();
-                } else {
-                    alert('Something went wrong. Please call us directly at +91 9582308938');
-                }
-            } catch (error) {
-                console.error('Error:', error);
-                alert('Network error. Please call us directly at +91 9582308938');
-            } finally {
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-            }
-        });
+const WEBHOOK_URL = "https://eoi7s0g2oovhmk.m.pipedream.net";
+document.getElementById('inquiryForm').addEventListener('submit', async function (e) {
+  e.preventDefault();
+  const parentName = document.getElementById('parentName').value;
+  const phoneNumber = document.getElementById('phoneNumber').value;
+  const childAge   = document.getElementById('childAge').value;
+  const message    = document.getElementById('message').value;
+  const btn = this.querySelector('button[type="submit"]');
+  const orig = btn.innerHTML;
+  btn.innerHTML = 'Sending… <i class="fas fa-spinner fa-spin"></i>';
+  btn.disabled = true;
+  try {
+    const res = await fetch(WEBHOOK_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ parentName, phoneNumber, childAge, message, source: 'Little Gurukul Website', timestamp: new Date().toISOString() })
+    });
+    if (res.ok) {
+      btn.innerHTML = '✓ Sent! We\'ll call you shortly.';
+      btn.style.background = 'var(--green-light)';
+      this.reset();
+    } else {
+      alert('Please call us directly at +91 95823 08938');
     }
+  } catch {
+    alert('Network error — please call +91 95823 08938');
+  } finally {
+    setTimeout(() => { btn.innerHTML = orig; btn.disabled = false; btn.style.background = ''; }, 4000);
+  }
 });
-</script> 
+</script>
 
 </body>
 </html>
